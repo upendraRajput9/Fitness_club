@@ -1,0 +1,95 @@
+.trainer{
+    background-color: rgba(0, 0, 0,0.5);
+}
+header{
+    background-image: url(./assets/media/trainer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.trainer-section{
+    background-image: url(./assets/media/background-grid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.trainer1{
+    background-image: url(./assets/media/trainer1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.trainer2{
+    background-image: url(./assets/media/trainer2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -18rem;
+}
+.trainer3{
+    background-image: url(./assets/media/trainer4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -24rem;
+}
+.trainer4{
+    background-image: url(./assets/media/trainer5.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -7rem;
+}
+.trainer{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    b{
+        color:goldenrod;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.trainer-middel-section{
+    padding-bottom: 5rem;
+    
+    h2{
+        
+    font-weight: 900;
+        font-size: 3rem;
+        width: 60%;
+    }
+}
+.icon-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 6rem;
+   gap: 4rem;
+   text-align: center;
+   a{
+       color: rgba(0, 0, 0,0.9);
+       background-color: rgba(255, 255, 255, 0.1);
+       box-shadow: 0 0 10px 0 #888888;
+       transition: 1s linear;
+       &:hover{
+        background-color: rgba(black,0.5);
+        box-shadow: 0 0 15px 10px rgba(black,0.7);
+        color: $primary;
+        transform: scale(0.8);
+       }
+       
+   }
+   i{
+    transition: 1s linear;
+    &:hover{
+     
+     transform:translateY(50%);
+    }
+}
+
+}

@@ -1,0 +1,134 @@
+@import 'var';
+@import 'reset';
+@import 'general';
+@import 'home';
+@import 'trainer';
+@import 'about';
+@import 'contact';
+
+.bar {
+  display: none;
+}
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 760px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .contact {
+    form {
+      width: 90%;
+    }
+  }
+
+  .sm-column {
+    flex-direction: column;
+  }
+  .sm-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nav {
+    display: none;
+  }
+  footer {
+    padding: 3rem;
+    section {
+      padding: 1rem;
+    }
+    .social-media{
+        width: 50%;
+    }
+  }
+  #myVideo {
+    height: 40%;
+  }
+  .hero {
+    height: 30vh;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      width: 50%;
+    
+    }
+  }
+  .trainer-section {
+    div {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      .trainer1 {
+        order: -1;
+      }
+      .trainer2 {
+        background-position-y: -13rem;
+      }
+      .trainer3 {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        background-position-y: -15rem;
+      }
+    }
+  }
+
+  .about-section {
+    figure {
+      height: 60vh;
+    }
+  }
+  .contact-page {
+    .map {
+      width: 100%;
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+
+  //
+  .nav {
+    height: 100%;
+    display: none;
+    position: fixed;
+    background-image: linear-gradient( goldenrod,rgba(0, 0, 0, 0.5));
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding-top: 10rem;
+    a {
+      font-size: 3rem;
+      background-image: linear-gradient(to right, rgb(196,18,48), rgb(0, 0, 0) );
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .bar {
+    position: fixed;
+    right: 0;
+    top: 1rem;
+    padding: 0 3rem;
+    font-size: 3rem;
+
+    display: block;
+    color: white;
+    z-index: 99;
+    &:active {
+      color: white;
+    }
+  }
+  #toggle:checked ~ .nav {
+    display: block;
+  }
+  .logo {
+    padding: 2rem 0;
+    z-index: 99;
+  }
+}

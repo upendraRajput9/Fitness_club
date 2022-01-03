@@ -1,0 +1,28 @@
+.contact-page{
+    padding: 2rem 0;
+    flex-direction: column;
+    background-image: url(./assets/media/trainer-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .map{
+        
+        width:80%;
+        figure{
+            border-radius: 2rem;
+            iframe{
+                box-shadow: 1px 5px 10px 5px rgb(0, 0, 0);
+                border-radius: 2rem;
+                border: 0.6rem solid rgb(0, 0, 0);
+            }
+        }
+
+    }
+    .form{
+        h2{
+            font-size: 2rem;
+            background-color: rgba(253, 252, 252,0.5);
+            padding: 0.5rem 2rem;
+        }
+        width: 100%;
+    }
+}

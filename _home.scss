@@ -1,0 +1,242 @@
+#myVideo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -99;
+}
+
+header {
+  padding: 0 2rem;
+  font-family: 'Righteous', cursive;
+  z-index: 99;
+  background-color: rgba(192, 192, 192, 0.5);
+  .logo {
+    font-family: 'Audiowide', cursive;
+    font-size: 2.5rem;
+    font-weight: 900;
+
+    color: $secondary;
+    b {
+      color: $primary;
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+  nav {
+    a {
+      color: $text-color;
+      padding: 0 2rem;
+      font-size: 1.3rem;
+
+      &:hover {
+        color: $primary;
+      }
+      &:active {
+        color: goldenrod;
+      }
+    }
+  }
+}
+// Hero
+@keyframes text1by1 {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 20ch;
+  }
+  100% {
+    width: 30ch;
+  }
+}
+
+.hero {
+  h1 {
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 1rem;
+    color: $primary;
+    width: 80%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: text1by1;
+    animation-duration: 5s;
+    animation-timing-function: steps(17);
+  }
+  height: 100vh;
+
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+//  CLASS-SCHEDULE
+.day {
+  cursor: pointer;
+}
+.daily-schedule {
+  padding: 2rem;
+}
+.schedule {
+  padding: 2rem;
+  background-color: rgb(245, 245, 245);
+  flex-direction: column;
+  margin-bottom: 1rem;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    color: $text-color;
+    width: 55%;
+    padding: 1rem 0 3rem 0;
+  }
+  li {
+    padding: 0.5rem 1.5rem;
+    color: $primary;
+    &:hover {
+      border-radius: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      background-color: $primary;
+      color: black;
+    }
+  }
+}
+.scheduleTemplate {
+  article {
+    padding: 7px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  small {
+    font-size: 1.4rem;
+  }
+  p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+.daily-schedule {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.scheduleTemplate {
+  //   background-color: rgba(0, 0, 0,0.2);
+  border: 5px solid $primary;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+// commit
+.commit {
+  height: 80vh;
+  padding: 3rem 0;
+  gap: 2rem;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  h2 {
+    font-size: 3rem;
+    background-color: $primary;
+    padding: 3px 1rem;
+  }
+  p {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 60%;
+  }
+  background-image: url(./assets/media/commit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+// contact
+.contact {
+  padding: 3rem 0;
+  h2 {
+    font-size: 2rem;
+  }
+  flex-direction: column;
+  form {
+    width: 60%;
+    gap: 1rem;
+
+    textarea {
+      width: 100%;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: goldenrod;
+      padding-left: 1rem;
+      border-radius: 4px;
+    }
+    
+    label {
+      width: 100%;
+      input {
+        color: goldenrod;
+        border-radius: 4px;
+        width: 48%;
+        padding: 0.5rem 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: none;
+        &::placeholder {
+          color: goldenrod;
+          padding-left: 1rem;
+        }
+      }
+      .width23 {
+        width: 23%;
+      }
+    }
+  }
+}
+
+//footer
+footer {
+  background-color: rgb(0, 0, 0);
+  b {
+    color: goldenrod;
+  }
+}
+.footer {
+  .logo {
+    font-size: 1.2rem;
+    color: gold;
+    b {
+      color: $primary;
+    }
+  }
+  h2 {
+    font-size: 1.2rem;
+    color: $primary;
+  }
+  color: white;
+  padding: 3rem 0;
+  align-content: flex-start;
+  justify-content: space-between;
+  a {
+    color: white;
+  }
+  .icon{
+    i{
+      transition: 1s linear;
+      &:hover{
+       
+       transform: rotate(360deg) scale(1.5);
+      }
+    }
+ 
+  }
+  
+}
