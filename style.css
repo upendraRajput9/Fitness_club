@@ -841,7 +841,7 @@ header {
     font-size: 3rem;
   }
   .hero p {
-    width: 50%;
+    font-size: 12px;
   }
   .trainer-section div {
     display: -ms-grid;
@@ -884,6 +884,7 @@ header {
     bottom: 0;
     top: 0;
     padding-top: 10rem;
+    z-index: 10;
   }
   .nav a {
     font-size: 3rem;
@@ -912,6 +913,7 @@ header {
   .logo {
     padding: 2rem 0;
     z-index: 99;
+    margin-right: 6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
